@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ProyectoDesarrollo.Models.TbPersona>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/AdminTableStyle.css" />
+    <title>Ver Personas</title>
+</head>
+<body>
+
+    Buscar personas
+    <input id="busquedaUser" type="text" placeholder="Buscar persona aquí" />
+
+    <h2><a asp-controller="AdminMenu" asp-action="verAgregacion" asp-route-id="1">Agregar nuevo Administrador</a></h2>
+    <h3>Listado de Usuarios</h3>
+
+    <table>
+        <tr>
+            <th>Id Persona</th>
+            <th>Nombre Persona</th>
+            <th>Apellidos Persona</th>
+            <th>Usuario</th>
+            <th>Contraseña</th>
+            <th>Tipo de Usuario</th>
+            <th>Eliminar</th>
+            <th>Modificar</th>
+        </tr>
+        <tbody id="tblBusqueda">
+            @foreach (var person in Model)
+            {
+                <tr>
+                    <td>@person.IdPersona</td>
+                    <td>@person.NombrePersona</td>
+                    <td>@person.Apellidos</td>
+                    <td>@person.Usuario</td>
+                    <td>@person.Clave</td>
+                    <td>@person.TipoPersona</td>
+                    <td><a asp-action="eliminarPersona" asp-route-id="@person.IdPersona">Eliminar</a></td>
+                    <td><a asp-action="pickPersona" asp-route-id="@person.IdPersona">Editar</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <form method="get">
+        <input type="submit" asp-controller="AdminMenu" asp-action="Index" value="Volver">
+    </form>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#busquedaUser").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#tblBusqueda tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

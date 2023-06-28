@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ProyectoDesarrollo.Models.TbCategorium>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/AdminTableStyle.css" />
+    <title>Ver Categorías</title>
+</head>
+<body>
+
+    Buscar personas
+    <input id="busquedaUser" type="text" placeholder="Buscar persona aquí" />
+
+    <h2><a asp-controller="AdminMenu" asp-action="verAgregacion" asp-route-id="3">Agregar nueva categoría</a></h2>
+    <h3>Listado de Categorías</h3>
+    <table>
+        <tr>
+            <th>Id Categoría</th>
+            <th>Nombre Categoría</th>
+            <th>Eliminar</th>
+            <th>Modificar</th>
+        </tr>
+        <tbody id="tblBusqueda">
+            @foreach (var category in Model)
+            {
+                <tr>
+                    <td>@category.IdCategoria</td>
+                    <td>@category.NombreCategoria</td>
+                    <td><a asp-action="eliminarCategoria" asp-route-id="@category.IdCategoria">Eliminar</a></td>
+                    <td><a asp-action="pickCategoria" asp-route-id="@category.IdCategoria">Editar</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <h6>ADVERTENCIA: Eliminar una categoria suprimira todo producto existente asignado a dicha categoria</h6>
+
+    <form method="get">
+        <input type="submit" asp-controller="AdminMenu" asp-action="Index" value="Volver">
+    </form>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#busquedaUser").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#tblBusqueda tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

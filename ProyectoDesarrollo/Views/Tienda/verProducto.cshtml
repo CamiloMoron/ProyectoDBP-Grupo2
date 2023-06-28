@@ -1,0 +1,56 @@
+﻿@model ProyectoDesarrollo.Models.TbProducto
+
+@{
+    ProyectoDesarrollo.Servicios.CategoriaRepository categorias =
+            new ProyectoDesarrollo.Servicios.CategoriaRepository();
+}
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Id Producto</th>
+                <td>@Model.IdProducto</td>
+            </tr>
+            <tr>
+                <th>Nombre Producto</th>
+                <td>@Model.NombreProducto</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>@Model.Descripcion</td>
+            </tr>
+            <tr>
+                <th>Precio</th>
+                <td>@Model.Precio</td>
+            </tr>
+            <tr>
+                <th>Stock</th>
+                <td>@Model.Stock</td>
+            </tr>
+            <tr>
+                <th>Categoria</th>
+                <td>@categorias.getCategoria(Model.IdCategoria).NombreCategoria</td>
+            </tr>
+        </table>
+
+
+    <form asp-controller="Tienda" asp-action="agregarProducto" method="post">
+        @Html.HiddenFor(model => model.IdProducto)
+        @Html.HiddenFor(model => model.NombreProducto)
+        @Html.HiddenFor(model => model.Descripcion)
+        @Html.HiddenFor(model => model.Precio)
+        @Html.HiddenFor(model => model.IdCategoria)
+        <input type="number" min="1" max="@Model.Stock" asp-for="Stock" value="1" />
+        <button id="btnAgregar" type="submit">Agregar</button>
+    </form>
+
+    <form asp-controller="Tienda" asp-action="Index" method="get">
+        <input type="submit" value="Volver" ></input>
+    </form>
+
+    </body>
+</html>

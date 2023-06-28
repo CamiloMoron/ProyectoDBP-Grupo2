@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ProyectoDesarrollo.Models.TbProducto>
+
+@{
+    ProyectoDesarrollo.Servicios.CategoriaRepository categorias =
+    new ProyectoDesarrollo.Servicios.CategoriaRepository();
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/AdminTableStyle.css" />
+</head>
+<body>
+
+    <form asp-controller="Tienda" asp-action="CerrarSesion" method="get">
+        <input type="submit" value="Cerrar Sesion"></input>
+    </form>
+
+    Buscar productos
+    <input id="busquedaUser" type="text" placeholder="Buscar producto aquí" />
+
+
+    <table id="myTable">
+        <tr>
+            <th>Id</th>
+            <th>Nombre Producto</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoria</th>
+            <th>Ver Producto</th>
+        </tr>
+        <tbody id="tblBusqueda">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.IdProducto</td>
+                    <td>@item.NombreProducto</td>
+                    <td>@item.Precio</td>
+                    <td>@item.Stock</td>
+                    <td>@categorias.getCategoria(item.IdCategoria).NombreCategoria</td>
+                    <td><a asp-action="verProducto" asp-route-id="@item.IdProducto">Ver Producto</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <form asp-controller="Tienda" asp-action="verCarrito" method="get">
+        <input type="submit" value="Carrito de Compras"></input>
+    </form>
+
+    <form asp-controller="Tienda" asp-action="verVentas" method="get">
+        <input type="submit" value="Compras Realizadas"></input>
+    </form>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#busquedaUser").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#tblBusqueda tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+

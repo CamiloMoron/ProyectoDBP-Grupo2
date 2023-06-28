@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ProyectoDesarrollo.Models.TbPersona>
+
+@{
+    ProyectoDesarrollo.Servicios.VentaRepository _venta = new ProyectoDesarrollo.Servicios.VentaRepository();
+}
+
+<html>
+
+    <body>
+
+    <h1>Ventas de Clientes</h1>
+    <select id="cliente01" name=" optionlist " onChange="combo(this, 'demo')">
+        @{
+            foreach (var cliente in Model)
+            {
+                <option>@cliente.IdPersona</option>
+            }
+        }
+    </select>
+
+    <table>
+        <tr>
+            <th>ID_VENTA</th>
+            <th>ID_CLIENTE</th>
+            <th>MONTO TOTAL</th>
+            <th>ESTADO VENTA</th>
+        </tr>
+        <tbody id="tblBusqueda">
+            @foreach (var item in _venta.getAllVentas())
+            {
+                <tr>
+                    <td>@item.IdVenta</td>
+                    <td>@item.IdCliente</td>
+                    <td>@item.TotalVenta</td>
+                    <td>@item.EstadoVenta</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    </body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $("#cliente01").on("change", function () {
+            var selectedValue = $(this).val();
+            $("#tblBusqueda tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

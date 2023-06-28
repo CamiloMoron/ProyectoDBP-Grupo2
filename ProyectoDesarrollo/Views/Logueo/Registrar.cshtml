@@ -1,0 +1,37 @@
+﻿@model ProyectoDesarrollo.Models.TbPersona
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registro</title>
+</head>
+<body>
+
+    <h1>Nuevo Registro de Cliente</h1>
+    <form asp-controller="Logueo" asp-action="Agregar" method="post">
+
+        <label for="txtNombres">Ingrese sus Nombres</label>
+        <input type="text" placeholder="Nombres aqui!" asp-for="NombrePersona" id="txtNombres"/>
+
+        <label for="txtApellidos">Ingrese sus Apellidos</label>
+        <input type="text" placeholder="Apellidos aqui!" asp-for="Apellidos" id="txtApellidos" />
+
+
+        <h3>Ingrese las credenciales para su cuenta</h3>
+
+        <label for="txtUsuario">Ingrese su Usuario</label>
+        <input type="text" placeholder="Usuario aqui!" asp-for="Usuario" id="txtUsuario" />
+
+        <label for="txtClave">Ingrese su Clave</label>
+        <input type="password" placeholder="Clave aqui!" asp-for="Clave" id="txtClave" />
+
+        <input type="hidden" value ="Cliente" asp-for="TipoPersona">
+
+        <input type="submit" value="Agregar"/>
+    </form>
+
+    <form asp-controller="Logueo" asp-action="Index" method="post">
+        <input type="submit" value="Cancelar"></input>
+    </form>
+</body>
+</html>

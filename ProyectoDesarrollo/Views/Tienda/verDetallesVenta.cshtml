@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ProyectoDesarrollo.Models.TbDetalleVentum>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/AdminTableStyle.css" />
+    <title>Detalle de la venta</title>
+</head>
+<body>
+    @{
+        ProyectoDesarrollo.Servicios.ProductoRepository productos =
+            new ProyectoDesarrollo.Servicios.ProductoRepository();
+    }
+
+    Buscar producto adquirido
+    <input id="busquedaUser" type="text" placeholder="Buscar boleta aqui" />
+
+    <h3>Productos adquiridos</h3>
+    <table>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unit.</th>
+            <th>Monto Total</th>
+        </tr>
+        <tbody id="tblBusqueda">
+            @foreach (var detalle in Model)
+            {
+                <tr>
+                    @{ //TOMANDO REFERENCIA DEL PRODUCTO
+                        ProyectoDesarrollo.Models.TbProducto producto = productos.getProducto(detalle.IdProducto);
+                    }
+                    <td>@producto.NombreProducto</td>
+                    <td>@detalle.Cantidad</td>
+                    <td>@producto.Precio</td>
+                    <td>@detalle.Precio</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <form method="get">
+        <input type="submit" asp-controller="Tienda" asp-action="verVentas" value="Volver">
+    </form>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#busquedaUser").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#tblBusqueda tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

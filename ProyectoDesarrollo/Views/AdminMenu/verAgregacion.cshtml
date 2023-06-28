@@ -1,0 +1,74 @@
+﻿@model ProyectoDesarrollo.Models.TbMultipleTables;
+
+@{
+    var opcion = ViewData["tipo"];//1--> cliente, 2 --> producto, 3 --> categoria
+}
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+
+    @{
+        switch(opcion)
+        {
+
+            default:
+                <h1>LA GUANEASTE!</h1>
+                <h3>>:(</h3>
+                break;
+
+            //PANTALLA DE CREACION DE ADMINISTRADORES (CREO QUE NO DEBERIA SER CAPAZ DE ESTO pero bueno) KEK
+            case 1:
+                <h1>INGRESE ATRIBUTOS DE NUEVO ADMINISTRADOR</h1>
+                    <form asp_controller="AdminMenu" asp-action="agregarPersona" method="post">
+                        Nombre Persona<input type="text" asp-for="@Model.TbPersona.NombrePersona" placeholder="Ingrese un nombre" /><br>
+                        Apellidos Persona<input type="text" asp-for="@Model.TbPersona.Apellidos" placeholder="Ingrese el apellido" /><br>
+                        Username<input type="text" asp-for="@Model.TbPersona.Usuario" placeholder="Ingrese el usuario" /><br>
+                        Contraseña<input type="password" asp-for="@Model.TbPersona.Clave" placeholder="Ingrese la constraseña" /><br>
+                        <input type="hidden" value="Administrador" asp-for="@Model.TbPersona.TipoPersona"/><br>
+                        <input type="submit" value="Agregar" />
+                    </form>
+
+                <form asp-controller="AdminMenu" asp-action="verPersonas" method="post">
+                    <input type="submit" value="Cancelar"></input>
+                </form>
+                break;
+
+            //PANTALLA PARA CREACION DE PRODUCTO
+            case 2:
+                <h1>INGRESE ATRIBUTOS DEL NUEVO PRODUCTO</h1>
+                <form asp_controller="AdminMenu" asp-action="agregarProducto" method="post">
+                    Nombre Producto<input type="text" asp-for="@Model.TbProducto.NombreProducto" placeholder="Ingrese un nombre" /><br>
+                    Descripcion<input type="text" asp-for="@Model.TbProducto.Descripcion" placeholder="Ingrese la descripcion del producto" /><br>
+                    Precio<input type="text" asp-for="@Model.TbProducto.Precio" placeholder="Ingrese el precio" /><br>
+                    Stock<input type="text" asp-for="@Model.TbProducto.Stock" placeholder="Ingrese el stock" /><br>
+                    Id Categoria<input type="text" asp-for="@Model.TbProducto.IdCategoria" placeholder="Ingrese el ID de la categoría" /><br>
+                    <input type="submit" value="Agregar" />
+                </form>
+
+                <form asp-controller="AdminMenu" asp-action="verProductos" method="post">
+                    <input type="submit" value="Cancelar"></input>
+                </form>
+                break;
+
+            //PANTALLA PARA CREACION DE CATEGORIA
+            case 3:
+                <h1>INGRESE ATRIBUTOS DE LA NUEVA CATEGORIA</h1>
+                    <form asp_controller="AdminMenu" asp-action="agregarCategoria" method="post">
+                        Nombre Categoria<input type="text" asp-for="@Model.TbCategoria.NombreCategoria"><br>
+                        <input type="submit" value="Agregar" />
+                    </form>
+
+                <form asp-controller="AdminMenu" asp-action="verCategorias" method="post">
+                    <input type="submit" value="Cancelar"></input>
+                </form>
+                break;
+
+        }
+        }
+
+    </body>
+
+</html>

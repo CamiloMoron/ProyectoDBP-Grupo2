@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProyectoDesarrollo.Models.TbVentum>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/AdminTableStyle.css" />
+    <title>Listado de ventas</title>
+</head>
+<body>
+
+    Buscar personas
+    <input id="busquedaUser" type="text" placeholder="Buscar boleta aqui" />
+
+    <h3>Historial de compras</h3>
+    <table>
+        <tr>
+            <th>Id Venta</th>
+            <th>Id Cliente</th>
+            <th>Total Venta</th>
+            <th>Estado</th>
+            <th>Productos Adquiridos</th>
+        </tr>
+        <tbody id="tblBusqueda">
+            @foreach (var venta in Model)
+            {
+                <tr>
+                    <td>@venta.IdVenta</td>
+                    <td>@venta.IdCliente</td>
+                    <td>@venta.TotalVenta</td>
+                    <td>@venta.EstadoVenta</td>
+                    <td><a asp-controller="Tienda" asp-action="verDetallesVenta" asp-route-id="@venta.IdVenta">ver detalles</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <form method="get">
+        <input type="submit" asp-controller="Tienda" asp-action="Index" value="Volver">
+    </form>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#busquedaUser").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#tblBusqueda tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

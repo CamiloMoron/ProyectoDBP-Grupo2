@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="~/css/IndexLogueoStyle.css" />
+    <title>Index</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>ELIJA COMO INGRESAR</h3>
+
+        <!--ESTE BOTON TE LLEVARA A INGRESAR COMO CLIENTE-->
+        <form method="get">
+            <input style="width: 300px; height: 80px" type="submit" id="btnClient" value="CLIENTE"
+            asp-controller="Logueo" asp-action="Ingresar" asp-route-id="1">
+        </form>
+
+        <!--ESTE BOTON TE LLEVARA A INGRESAR COMO ADMINISTRADOR-->
+        <form>
+
+            <input style="width: 300px; height: 80px" type="submit" id="btnAdmin" value="ADMINISTRADOR"
+            asp-controller="Logueo" asp-action="Ingresar" asp-route-id="2">
+
+        </form>
+
+        <!--ESTE BOTON TE LLEVARA AL CATALOGO COMO INVITADO-->
+        <form>
+
+            <input style="width: 300px; height: 80px" type="submit" value="INVITADO" id="btnGuest"
+                   asp-controller="Logueo" asp-action="entrarComoInvitado">
+
+        </form>
+
+        <!--ESTE ENLACE TE LLEVARA A CREAR UNA CUENTA COMO CLIENTE-->
+        <i>
+            Si no tienes una cuenta de cliente, registrate
+            <a id="nuevaCuentaLink" asp-action="Registrar">aqui</a>
+        </i>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html></>
+@model ProyectoDesarrollo.Servicios.TempPersona
+
+<html>
+    <head>
+        <title>Ingreso</title>
+        <link rel="stylesheet" href="~/css/LoginStylecss.css" />
+    </head>
+
+    <body>
+
+    <form asp-controller="Logueo" asp-action="Login" method="post">
+
+        @if (ViewData["tipo"].Equals(1)) //tipo cliente
+        {
+            <input type="hidden" value="Cliente" asp-for="tipo">
+            <h1>INGRESAR COMO CLIENTE</h1>
+        }
+        else if (ViewData["tipo"].Equals(2)) //tipo administrador
+        {
+            <input type="hidden" value="Administrador" asp-for="tipo">
+            <h1>INGRESAR COMO ADMINISTRADOR</h1>
+        }
+        else
+        {
+            <h1>LA GUANEASTE</h1>
+        }
+        <div class="loginbox">
+        <label for="txtUsuario">Ingrese su usuario:</label>
+        <input type="text" id="txtUsuario" asp-for="usuario"><br />
+
+        <label for="txtClave">Ingrese su clave:</label>
+            <input type="password" id="txtClave" asp-for="clave"><br />
+
+        <input type="submit" value="Ingresar" id="btnsubmit">
+        </div>
+    </form>
+
+    <form asp-controller="Logueo" asp-action="Index" method="get">
+        <div class="CancelContainer" style="transform: translate(0%, 0%); margin:50px;">
+            <input type="submit" value="Cancelar"></input>
+        </div>
+    </form>
+    </body>
+
+</html>

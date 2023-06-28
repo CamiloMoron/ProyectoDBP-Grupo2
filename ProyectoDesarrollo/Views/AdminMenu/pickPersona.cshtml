@@ -1,0 +1,26 @@
+﻿@model ProyectoDesarrollo.Models.TbPersona
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form asp_controller="AdminMenu" asp-action="editarPersona" method="post">
+        <input type="hidden" asp-for="IdPersona" value="@Model.IdPersona" />
+        Nombre Persona<input type="text" asp-for="NombrePersona" placeholder="Ingrese un nombre" /><br/>
+        Apellidos Persona<input type="text" asp-for="Apellidos" placeholder="Ingrese los apellidos" /><br />
+        Usuario<input type="text" asp-for="Usuario" placeholder="Ingrese el nombre de usuario" /><br />
+        Contraseña<input type="text" asp-for="Clave" placeholder="Ingrese la contraseña del usuario" /><br />
+        Tipo de usuario<input type="text" asp-for="TipoPersona" placeholder="Ingrese el tipo de usuario" /><br />
+        <input type="submit" value="Editar" />
+    </form>
+
+    <form asp-controller="AdminMenu" asp-action="verPersonas" method="post">
+        <input type="submit" value="Cancelar"></input>
+    </form>
+</body>
+</html>

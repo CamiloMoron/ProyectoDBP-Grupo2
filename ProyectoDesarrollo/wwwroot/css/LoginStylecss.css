@@ -1,0 +1,28 @@
+﻿.loginbox 
+{
+    height: 200px;
+    width: 25%;
+    border: 5px solid #545F66;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Linux Libertine';
+}
+
+body {
+    background-color: #829399;
+}
+
+.CancelContainer{
+transform: translate(0%, 0%);
+margin:50px;
+}

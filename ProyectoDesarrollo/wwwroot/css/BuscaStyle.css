@@ -1,0 +1,17 @@
+﻿table, th, td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+body {
+    background: #587B7F;
+}
+
+th {
+    color: white;
+    background: black;
+    text-align: center;
+}
+#busquedaUser{
+    text-align:center;
+}

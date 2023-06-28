@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html></>
+@model ProyectoDesarrollo.Servicios.TempObjData
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="~/css/IndexLogueoStyle.css" />
+        <title>Menu Administrador</title>
+
+    </head>
+
+    <body>
+
+    <div class="container">
+        <h3>MENU DE ADMINISTRADOR</h3>
+
+       
+        <form method="get">
+            <input style="width: 300px; height: 80px" type="submit" id="btnClient" value="BASE DE CLIENTES"
+                   asp-controller="AdminMenu" asp-action="verPersonas" asp-route-id ="1">
+        </form>
+
+        
+        <form method="get">
+
+            <input style="width: 300px; height: 80px" type="submit" id="btnCatalogo" value="CATALOGO"
+                   asp-controller="AdminMenu" asp-action="verProductos" asp-route-id ="2">
+        </form>
+
+       
+        <form method="get">
+
+            <input style="width: 300px; height: 80px" type="submit" value="CATEGORIAS" id="btnCategoria"
+                   asp-controller="AdminMenu" asp-action="verCategorias" asp-route-id="3">
+        </form>
+    </div>
+
+    <form asp-controller="Logueo" asp-action="Index" method="post">
+        <input type="submit" value="Cerrar Sesion" style="height:20px; width:110px"></input>
+    </form>
+
+    </body>
+
+</html>
