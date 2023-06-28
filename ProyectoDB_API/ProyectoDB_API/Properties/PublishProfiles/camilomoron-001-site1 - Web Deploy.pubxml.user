@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAtlhM3FZnzUaXgPo5TgAB8wAAAAACAAAAAAAQZgAAAAEAACAAAAA+q3icMQWdTxZw0jLpllrAvLu37SjPQkumW/E92KZjdQAAAAAOgAAAAAIAACAAAAAkACa/EJOBU16TTBVqMC/tVE6V3kl/54I4JUpylyGeRiAAAAC69r8uo6COm60z6/ca6gqGhZPJ37P7OFDfqsmtqsvNhUAAAAAzp8MYGdy5l5N8X39+jwmEg+c2+C/8xU3bMU8DmmFnl2vrXBGnDzzz2DrQcq7FEyvFQven76uPm8nHckys3bjd</EncryptedPassword>
+    <History>False|2023-06-26T05:29:26.0169988Z;False|2023-06-26T00:25:09.4887827-05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="ProyectoDB_API.Models.APIContext">
+      <Value>
+      </Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
