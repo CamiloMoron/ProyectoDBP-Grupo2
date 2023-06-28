@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProyectoDesarrollo
+build_property.RootNamespace = ProyectoDesarrollo
+build_property.ProjectDir = C:\Users\fabri\Desktop\Cursos Usil\TERCER CICLO\Desarrollo basado en plataformas\Proyecto\ProyectoDesarrollo\ProyectoDesarrollo\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\fabri\Desktop\Cursos Usil\TERCER CICLO\Desarrollo basado en plataformas\Proyecto\ProyectoDesarrollo\ProyectoDesarrollo
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/AdminMenu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NZW51XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/AdminMenu/pickCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NZW51XHBpY2tDYXRlZ29yaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/AdminMenu/pickPersona.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NZW51XHBpY2tQZXJzb25hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/AdminMenu/pickProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NZW51XHBpY2tQcm9kdWN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/AdminMenu/verAgregacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NZW51XHZlckFncmVnYWNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/AdminMenu/verCategorias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NZW51XHZlckNhdGVnb3JpYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/AdminMenu/verPersonas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NZW51XHZlclBlcnNvbmFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/AdminMenu/verProductos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NZW51XHZlclByb2R1Y3Rvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Logueo/EvaluacionPractica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9ndWVvXEV2YWx1YWNpb25QcmFjdGljYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Logueo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9ndWVvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Logueo/Ingresar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9ndWVvXEluZ3Jlc2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Logueo/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9ndWVvXFJlZ2lzdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Search/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Tienda/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Tienda/limitedIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXGxpbWl0ZWRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Tienda/verCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXHZlckNhcnJpdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Tienda/verDetallesVenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXHZlckRldGFsbGVzVmVudGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Tienda/verProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXHZlclByb2R1Y3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Tienda/verVentas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXHZlclZlbnRhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fabri/Desktop/Cursos Usil/TERCER CICLO/Desarrollo basado en plataformas/Proyecto/ProyectoDesarrollo/ProyectoDesarrollo/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-b256swk6dl
